@@ -1,0 +1,336 @@
+#pricing {
+  .starter {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  .starter .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    background-color: rgb(56, 22, 102);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-head-mobile-inner .eapps-pricing-table-column-title-container{
+    padding: 32px 0;
+    margin: 0;
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    margin: 0;
+    padding: 32px;
+  }
+
+  .starter .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .starter .eapps-pricing-table-column-title-caption {
+    color: rgb(255, 255, 255);
+  }
+
+  .starter :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-features-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-features-container {
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .starter .eapps-pricing-table-column-features-item {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .starter .eapps-pricing-table-column-features-item-inner {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .starter .eapps-pricing-table-hint-icon svg {
+    fill: currentColor;
+  }
+
+  .starter .eapps-pricing-table-column-features-item-icon {
+    fill: rgb(56, 22, 102);
+  }
+
+  .starter .eapps-pricing-table-column-features-item {
+    font-size: 13px;
+  }
+
+  .starter :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-price-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-price-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .starter .eapps-pricing-table-column-price-caption {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .starter .eapps-pricing-table-column-price-wrapper {
+    color: #380b63;
+  }
+
+  .starter .eapps-pricing-table-column-price-text {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .starter .eapps-pricing-table-column-price-currency {
+    font-size: 12px;
+  }
+
+  .starter .eapps-pricing-table-column-button-type-outline {
+    border-color: rgb(56, 22, 102);
+    color: rgb(56, 22, 102);
+  }
+
+  .starter .eapps-pricing-table-column-button-type-filled {
+    background: rgb(56, 22, 102);
+    color: rgb(255, 255, 255);
+  }
+
+  .starter :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-button-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-button-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .growth {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 6px 20px rgba(0,0,0,.15);
+  }
+
+  .growth .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    background-color: #7dcc93;
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-head-mobile-inner .eapps-pricing-table-column-title-container{
+    padding: 32px 0;
+    margin: 0;
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    margin: 0;
+    padding: 32px;
+  }
+
+  .growth .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .growth .eapps-pricing-table-column-title-caption {
+    color: rgb(255, 255, 255);
+  }
+
+  .growth :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-features-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-features-container {
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .growth .eapps-pricing-table-column-features-item {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .growth .eapps-pricing-table-column-features-item-inner {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .growth .eapps-pricing-table-hint-icon svg {
+    fill: currentColor;
+  }
+
+  .growth .eapps-pricing-table-column-features-item-icon {
+    fill: #7dcc93;
+  }
+
+  .growth .eapps-pricing-table-column-features-item {
+    font-size: 13px;
+  }
+
+  .growth :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-price-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-price-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .growth .eapps-pricing-table-column-price-caption {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .growth .eapps-pricing-table-column-price-wrapper {
+    color: #380b63;
+  }
+
+  .growth .eapps-pricing-table-column-price-text {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .growth .eapps-pricing-table-column-price-currency {
+    font-size: 12px;
+  }
+
+  .growth .eapps-pricing-table-column-button-type-outline {
+    border-color: #7dcc93;
+    color: #7dcc93;
+  }
+
+  .growth .eapps-pricing-table-column-button-type-filled {
+    background: #7dcc93;
+    color: rgb(255, 255, 255);
+  }
+
+  .growth :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-button-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-button-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .innovation {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  .innovation .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    background-color: rgb(56, 22, 102);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-head-mobile-inner .eapps-pricing-table-column-title-container{
+    padding: 32px 0;
+    margin: 0;
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-container {
+    margin: 0;
+    padding: 32px;
+  }
+
+  .innovation .eapps-pricing-table-column-inner .eapps-pricing-table-column-title-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .innovation .eapps-pricing-table-column-title-caption {
+    color: rgb(255, 255, 255);
+  }
+
+  .innovation :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-features-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-features-container {
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .innovation .eapps-pricing-table-column-features-item {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .innovation .eapps-pricing-table-column-features-item-inner {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .innovation .eapps-pricing-table-hint-icon svg {
+    fill: $currentColor;
+  }
+
+
+
+  .innovation .eapps-pricing-table-column-features-item-icon {
+    fill: rgb(56, 22, 102);
+  }
+
+  .innovation .eapps-pricing-table-column-features-item {
+    font-size: 13px;
+  }
+
+  .innovation :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-price-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-price-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .innovation .eapps-pricing-table-column-price-caption {
+    color: rgb(17, 17, 17, 0.7);
+  }
+
+  .innovation .eapps-pricing-table-column-price-wrapper {
+    color: #380b63;
+  }
+
+  .innovation .eapps-pricing-table-column-price-text {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .innovation .eapps-pricing-table-column-price-currency {
+    font-size: 12px;
+  }
+
+  .innovation .eapps-pricing-table-column-button-type-outline {
+    border-color: rgb(56, 22, 102);
+    color: rgb(56, 22, 102);
+  }
+
+  .innovation .eapps-pricing-table-column-button-type-filled {
+    background: rgb(56, 22, 102);
+    color: rgb(255, 255, 255);
+  }
+
+  .innovation :not(.eapps-pricing-table-column-head-mobile-inner >) .eapps-pricing-table-column-button-container {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .eapps-pricing-table-column .eapps-pricing-table-column-button-container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .eapps-pricing-table-toggle-item {
+    color: rgb(125, 204, 147);
+  }
+
+  .eapps-pricing-table-toggle-item .eapps-pricing-table-toggle-item-hint {
+    background-color: rgba( 125, 204, 147, 0.1);
+  }
+
+  .eapps-pricing-table-toggle-item .eapps-pricing-table-toggle-item-name {
+    border: solid 1px rgba( 125, 204, 147, 0.1);
+  }
+
+  .eapps-pricing-table-toggle-item-active .eapps-pricing-table-toggle-item-name {
+    background-color: rgba( 125, 204, 147, 0.1);
+  }
+}
