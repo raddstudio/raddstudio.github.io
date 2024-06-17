@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="image" name="og:image" content="https://raddstudio.com/images/mail/pricing.png" />
+    <meta
+        name="description"
+        property="og:description"
+        content="Design, Develop, and Dream. We are a boutique studio for bespoke web and software goods and services."
+      />
+    <meta name="title" property="og:title" content="Radd Studio Inc. // Choose your Plan and manage your Subscription" />
+    <meta name="url" property="og:url" content="https://raddstudio.com/plans" />
+    <meta name="site_name" property="og:site_name" content="Radd Studio Inc." />
+    <meta name="author" content="Rick Graham @ Radd Studio Inc">
+    <meta property="article:published_time" content="2023-12-24" />
+
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon-1024x1024.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
+    <script>var Alert = ReactBootstrap.Alert;</script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Radd Studio Inc. // Get Started</title>
+    <style>
+      small {
+        color: #aeaeae;
+      }
+      stripe-pricing-table:hover {
+        background: #ccc;
+      }
+      h2 a {
+        font-size: 40%;
+        position: relative;
+        top: -0.5em;
+        left: -0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container" id="root">
+      <main>
+        <div class="row">
+          <div class="col-12 p-4 text-start">
+            <h1>Select a plan</h1>
+            <small><a target="_blank" href="https://billing.stripe.com/p/login/eVag2C1R58Er2Pu4gg">Change or cancel</a> your plan at anytime</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 ps-4">
+            <div class="card mb-4 rounded-3 shadow-sm" style="height: 800px;">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Support</h4>
+                <small>Ideal for small teams and startups</small>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">US$1,250<small class="text-muted fw-light">/m</small></h1>
+                <p class="pb-5"><small>This month you want to keep an eye on progress, you have a flow going and need to keep accountable to yourself and your team</small></p>
+                <a href="https://buy.stripe.com/28oaI6bj0b03c00005" target="_blank" class="w-100 btn btn-lg btn-outline-primary my-5">Choose Support</a>
+                <ul class="mt-3 my-5 text-start">
+                  <li>Monthly success calls</li>
+                  <li>Dedicated CTO for your team</li>
+                  <li>Small Improvements</li>
+                  <li>Direction and strategy consulting</li>
+                  <li>Up to 1h daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 ps-4">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary" style="height: 800px;">
+              <div class="card-header py-3 text-white bg-primary border-primary">
+                <div class="d-flex justify-content-between">
+                  <h4 class="my-0 fw-normal">Growth</h4>
+                  <p><span class="badge bg-warning text-black">Most Popular</span></p>
+                </div>
+                <small>Perfect for growing businesses</small>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">US$3,750<small class="text-muted fw-light">/m</small></h1>
+                <p class="pb-5"><small>Its time to focus on gaining traction, attending to customers, adding process improvements, and keeping the team productive</small></p>
+                <a href="https://buy.stripe.com/8wM03s86O8RVggg3ci" target="_blank" class="w-100 btn btn-lg btn-primary my-5">Choose Growth</a>
+                <ul class="mt-3 my-5 text-start">
+                  <li>Custom landing pages</li>
+                  <li>UI/UX design and branding</li>
+                  <li>Software setup and automations</li>
+                  <li>Specifications and process improvements</li>
+                  <li>Up to 3h daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 ps-4">
+            <div class="card mb-4 rounded-3 shadow-sm" style="height: 800px;">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Innovation</h4>
+                <small>Accelerate your product</small>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">US$12,500<small class="text-muted fw-light">/m</small></h1>
+                <p class="pb-5"><small>This month you want to focus on adding features and growing your products offerings. Select a focus this month and execute</small></p>
+                <a href="https://buy.stripe.com/eVa03s86Oecfe887sz" target="_blank" class="w-100 btn btn-lg btn-outline-primary my-5">Choose Innovation</a>
+                <ul class="mt-3 my-5 text-start">
+                  <li>Full custom software build</li>
+                  <li>Wireframing and prototyping</li>
+                  <li>Test Driven Development</li>
+                  <li>up to 10h daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 pb-5">
+          <div class="col-12 ps-4">
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-header">
+                <h5 class="my-0 fw-normal">Weekly</h5>
+                <small>Success calls to keep on the right path</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title pricing-card-title">US$900<small class="text-muted fw-light">/m</small></h4>
+                <p class=""><small>Set weekly objectives and keep yourself accountable to them</small></p>
+                <a href="https://buy.stripe.com/eVaaI61Iq5FJfcc5kn" target="_blank" class="btn btn-sm btn-outline-primary">Choose Monthly</a>
+                <a href="https://buy.stripe.com/8wMeYm0Em8RV1lmcMN" target="_blank" class="btn btn-sm btn-outline-secondary">Choose Weekly</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 ps-4">
+            <div class="card mt-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h5 class="my-0 fw-normal">Monthly</h5>
+                <small>Touchbase with us to set your next steps and to remain accountable</small>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title pricing-card-title">US$250<small class="text-muted fw-light">/m</small></h4>
+                <p class=""><small>Your goals need to be challanged and updated regularly, keep up the good work! </small></p>
+                <a href="https://buy.stripe.com/dR68zYevc8RVggg3ce" target="_blank" class="btn btn-sm btn-outline-secondary">Choose Monthly</a>
+              </div>
+            </div>
+            <p>
+              <small>
+                Check out all the other ways you can <a href="/get-started">Get Started</a> for solopreneurs, digital nomads, and small teams.
+              </small>
+              <small>All prices are USD</small>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer bg-dark">
+        <div class="container">
+          <nav class="w-100 text-end mr-3 navbar navbar-expand navbar-light fixed-bottom">
+            <p class="w-100 text-black">
+              <a href="https://raddrick.github.io/" target="raddrick" class="bg-light p-1 rounded">@raddrick</a> / <a href="https://raddstudio.com" class="bg-light p-1 rounded">RaddStudio.com</a>
+              <br> <span class="bg-light p-1 rounded">©'007-2024</span>
+            </p>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+    
+      // personal message and ascii art for console
+      var message = "Welcome to:\n      ,. -  .,                          ,.,         ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,              ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,\n   ,&#x27; ,. -  .,  &#x60;&#x27; &#xB7;,                 ;&#xB4;   &#x27;&#xB7;.,      \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.          \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.\n   &#x27;; &#x27;&#xB7;~;:::::&#x27;&#x60;,   &#x27;;\\            .&#xB4;  .-,  &#x27;;\\     &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,      &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,\n    ;   ,&#x27;:\\::;:&#xB4;  .&#xB7;&#xB4;::\\&#x27;         /   /:\\:&#x27;;  ;&#x27;\\&#x27;    ;   ;&#x27;::\\;::::&#x27;;   ;\\     ;   ;&#x27;::\\;::::&#x27;;   ;\\\n    ;  &#xB7;&#x27;-&#xB7;&#x27;&#xB4;,.-&#xB7;&#x27;&#xB4;:::::&#x27;;       ,&#x27;  ,&#x27;::&#x27;\\&#x27;;  ;:&#x27;;    ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;  ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;\n  ;&#xB4;    &#x27;:,&#xB4;:::::::::::&#xB7;&#xB4;&#x27;   ,.-&#xB7;&#x27;  &#x27;&#xB7;~^*&#x27;&#xB4;&#xA8;,  &#x27;;:;   ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;  ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;\n   &#x27;;  ,    &#x60;&#xB7;:;:-&#xB7;&#x27;&#xB4;        &#x27;:,  ,&#xB7;:&#xB2;*&#xB4;&#xA8;&#xAF;&#x27;&#x60;;  ;::&#x27;;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;\n   ; ,&#x27;:\\&#x27;&#x60;:&#xB7;.,  &#x60; &#xB7;.,       ,&#x27;  / \\::::::::&#x27;;  ;::&#x27;; &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;  &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;\n   \\&#xB7;-;::\\:::::&#x27;&#x60;:&#xB7;-.,&#x27;;    ,&#x27; ,&#x27;::::\\&#xB7;&#xB2;*&#x27;&#xB4;&#xA8;&#xAF;&#x27;:,&#x27;\\:;   \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;       \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;\n    \\::\\:;&#x27;&#x60; &#xB7;:;:::::\\::\\&#x27;  \\&#x60;&#xA8;\\:::/          \\::\\&#x27;     \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;          \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;\n     &#x27;&#xB7;-&#xB7;&#x27;      &#x60;&#x27; &#xB7; -&#x27;::&#x27;  &#x27;\\::\\;&#x27;            &#x27;\\;&#x27;        &#x60;\\;::-&#xB7;&#xB4;          ____ __ &#x60;\\;::-&#xB7;&#xB4;   __ _\n                              &#x60;&#xA8;&#x27;                                           / __// /_ __ __ ___/ /(_)___\n                                                                           _\\ \\ / __// // // _  // // _ \\\n                                                                          /___/ \\__/ \\_,_/ \\_,_//_/ \\___/\n\nDesign, Develop, and Dream; Rick Graham, c.1983\n\nFollow me on twitter!\n\n  @radd_rick\n  @raddstudio\n\nSee an issue here?? Dont laugh...let me know! rick at raddstudio dot com";
+      // I dont want to store the message and raw text, so it is html encoded.
+      // we can use a span to decode it, there is no method to do this in javascript
+      // directly.
+      var node = document.createElement('span');
+      node.innerHTML = message;
+      console.log(node.innerHTML);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17496104-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-17496104-1');
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/6346a5c037898912e96e38e2/1gf5veuro';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Hotjar Tracking Code for https://raddstudio.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3714410,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </body>
+</html>

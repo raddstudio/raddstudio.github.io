@@ -1,0 +1,49 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="221px" height="221px" viewBox="0 0 221 221" style="enable-background:new 0 0 221 221;" xml:space="preserve">
+	<style type="text/css">
+	<![CDATA[
+		.hidden{display:none;}
+	]]>
+	</style>
+<!-- 
+	<animate id="animation1"
+       attributeName="opacity"
+       from="0" to="1" dur="1s"
+       begin="animation2.end" />
+	<animate id="animation2"
+       attributeName="opacity"
+       from="1" to="0" dur="1s" 
+       begin="4s" />
+ -->
+  <g class="avy teamster">
+			<image style="display:inline;overflow:visible;" width="219" height="221" xlink:href="3D8A527E.jpg"></image>
+	</g>
+	<g class="avy rouge">
+			<image style="display:inline;overflow:visible;" width="218" height="219" xlink:href="3D8A5279.jpg">
+			</image>
+	</g>
+	<g class="avy beach">
+			<image style="display:inline;overflow:visible;" width="220" height="219" xlink:href="3D8A5278.jpg"></image>
+	</g>
+	<g class="avy transit">
+			<image style="display:inline;overflow:visible;" width="218" height="218" xlink:href="3D8A5277.jpg"></image>
+	</g>
+	<g class="avy burningman">
+			<image style="display:inline;overflow:visible;" width="219" height="219" xlink:href="3D8A5286.jpg"></image>
+	</g>
+	<g class="avy steamworks">
+			<image style="display:inline;overflow:visible;" width="220" height="219" xlink:href="3D8A5289.jpg"></image>
+	</g>
+	<g class="avy revy">		
+			<image style="overflow:visible;" width="218" height="218" xlink:href="3D8A5288.jpg"></image>
+	</g>
+	<g class="avy kickinghorse">
+			<image style="display:inline;overflow:visible;" width="219" height="219" xlink:href="3D8A528F.jpg"></image>
+	</g>
+	<g class="avy wut">
+			<image style="display:inline;overflow:visible;" width="219" height="219" xlink:href="3D8A528E.jpg"></image>
+	</g>
+	<g class="avy lol">
+			<image style="display:inline;overflow:visible;" width="219" height="219" xlink:href="E4FDEC17.jpg"></image>
+	</g>
+</svg>

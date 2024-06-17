@@ -1,0 +1,123 @@
+<svg 
+	viewBox="0 0 20 20" x="0px" y="0px" width="100px" height="100px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
+	<g  transform="translate(5,5)" style="animation-duration:1s">
+		<g>
+			<rect x="0" y="0" width="1" height="1"></rect>
+		    <animate id="ani10"
+		      attributeName="opacity"
+		      values="0;1" dur="0.1s" 
+		      begin="0s;ani11.end"
+		      />
+  		    <animate id="ani11"
+		      attributeName="opacity"
+		      values="0" dur="1s" 
+		      begin="ani10.end"
+		      />
+		</g>
+		<g opacity="0">
+			<!-- left -->
+			<rect x="-2" y="0" width="2" height="1"></rect> 
+			<!-- top -->
+			<rect x="0" y="-2" width="1" height="2"></rect>
+			<!-- right -->
+			<rect x="1" y="0" width="2" height="1"></rect>
+			<!-- bottom -->
+			<rect x="0" y="1" width="1" height="2"></rect>
+		    <animate id="ani20"
+		      attributeName="opacity"
+		      values="0;1"
+		      dur="0.1s" 
+		      begin="ani10.end"
+		      />
+		    <animate id="ani21"
+		      attributeName="opacity"
+		      values="0"
+		      dur="1s" 
+		      begin="ani20.end"
+		      />
+		</g>
+		<g opacity="0">
+			<!-- left -->
+			<rect x="-3" y="0" width="2" height="1"></rect> 
+			<!-- top -->
+			<rect x="0" y="-3" width="1" height="2"></rect>
+			<!-- right -->
+			<rect x="2" y="0" width="2" height="1"></rect>
+			<!-- bottom -->
+			<rect x="0" y="2" width="1" height="2"></rect>
+		    <animate id="ani30"
+		      attributeName="opacity"
+		      values="0;1"
+		      dur="0.1s" 
+		      begin="ani20.end"
+		      />
+		    <animate id="ani31"
+		      attributeName="opacity"
+		      values="0"
+		      dur="1s" 
+		      begin="ani30.end"
+		      />
+		</g>
+		<g opacity="0">
+			<!-- left -->
+			<rect x="-4" y="0" width="1" height="1"></rect> 
+			<!-- top -->
+			<rect x="0" y="-4" width="1" height="1"></rect>
+			<!-- right -->
+			<rect x="4" y="0" width="1" height="1"></rect>
+			<!-- bottom -->
+			<rect x="0" y="4" width="1" height="1"></rect>
+		    <animate id="ani40"
+		      attributeName="opacity"
+		      values="0;1"
+		      dur="0.1s" 
+		      begin="ani30.end"
+		      />
+	        <animate id="ani41"
+		      attributeName="opacity"
+		      values="0"
+		      dur="1s" 
+		      begin="ani40.end"
+		      />
+		</g>
+		<g opacity="0">
+			<!-- left -->
+			<rect x="-4" y="0" width="1" height="1"></rect> 
+			<!-- left/top -->
+			<rect x="-3" y="-3" width="1" height="1"></rect> 
+			<!-- top -->
+			<rect x="0" y="-4" width="1" height="1"></rect>
+			<!-- top/right -->
+			<rect x="3" y="-3" width="1" height="1"></rect>
+			<!-- right -->
+			<rect x="4" y="0" width="1" height="1"></rect>
+			<!-- right/bottom -->
+			<rect x="3" y="3" width="1" height="1"></rect>
+			<!-- bottom -->
+			<rect x="0" y="4" width="1" height="1"></rect>
+		    <!-- bottom/left -->
+			<rect x="-3" y="3" width="1" height="1"></rect>
+		    <animate id="ani50"
+		      attributeName="opacity"
+		      values="0;1"
+		      dur="0.1s" 
+		      begin="ani40.end"
+		      />
+	        <animate id="ani51"
+		      attributeName="opacity"
+		      values="0"
+		      dur="1s" 
+		      begin="ani50.end"
+		      />
+		</g>
+	</g>
+</svg>
+
+<!-- 
+Rainbow
+#ff9900
+#ffff00
+#33ff00
+#0099ff
+#6633ff
+-->
