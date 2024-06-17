@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="image" property="og:image" content="https://raddstudio.com/images/award_bg_cesa19.jpg" />
+    <meta
+      name="description" property="og:description"
+      content="Design, Develop, and Dream. Boutique studio for web and software goods and services."
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-1024x1024.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script async src="/guide.js"></script>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+
+    <!-- https://raddstudio.us.auth0.com/api/v2/ -->
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin></script>
+
+    <script>var Alert = ReactBootstrap.Alert;</script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Radd Studio Inc. // CTO Guide</title>
+    <style>
+      small {
+        color: #aeaeae;
+      }
+      stripe-pricing-table:hover {
+        background: #ccc;
+      }
+      .section {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover !important;
+        min-height: 800px;
+      }
+     #signupForm {
+        opacity: 1;
+        transition: opacity 1s; 
+      }
+
+      #signupForm.fade {
+        opacity: 0;
+      }
+
+      div.card a:visited {
+        border-color: grey;
+        background-color: lightgrey;
+        color: black;
+        content: "✅";
+      }
+
+      h2::first-letter {
+        text-transform:capitalize;
+      }
+
+      a:hover .icon {
+        border: 1.5px solid orange;
+      }
+      .icon-label {
+      }
+      .icon {
+        border: 1px solid darkgrey;
+        margin: 1em;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 93px;
+        height: 93px;
+      }
+
+      .mic {
+        background: url('/images/cto-guide/gear/mic.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+      .console {
+        background: url('/images/cto-guide/gear/console.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+      .desk {
+        background: url('/images/cto-guide/gear/desk.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+      .display {
+        background: url('/images/cto-guide/gear/display.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+      .luna {
+        background: url('/images/cto-guide/gear/luna.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+      .roost {
+        background: url('/images/cto-guide/gear/roost.jpg') 50% 50% no-repeat;
+        background-size: 75%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container-fluid" id="root">
+      <main>
+
+        <div class="row my-5 py-5 text-center section">
+          <div class="col-12">
+            <div class="mb-5">
+              <h4>Your all-in-one</h4>
+              <h1 class="display-5 fw-bold lh-1 mb-0">CTO Toolkit</h1>
+              <small>FREE FOREVER!</small>
+            </div>
+            <p>A list of tools that gives you every thing you need to know about CTOs!</p> 
+            <div class="overflow-hidden border-bottom" style="max-height: 40vh">
+              <div class="px-5">
+                <img src="/images/308508109_162387306399081_3029205634005484496_n.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 text-center section">
+          <div class="col-12">
+            <div class="col-md-10 offset-md-1 px-4 py-2 py-lg-5">
+              <div class="row flex-lg-row align-items-center g-5 py-2 py-md-5 text-start">
+                <div class="col-12 py-2 col-md-7">
+                  <div class="px-md-5">
+                    <img src="/images/363443681_135276836294562_2939531895207017152_n.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" loading="lazy" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <small>Hand-picked</small>
+                  <h2 class="display-5 fw-bold lh-1 mb-3">Access a wide variety of tools & resources</h2>
+                  <p class="lead">Sign up for free access.</p>
+
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#signup" class="btn btn-primary btn-lg px-4 me-md-2" target="_blank">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5 text-center section">
+          <div class="col-12">
+            <div class="col-md-10 offset-md-1 px-4 py-2 py-lg-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-2 py-md-5 text-start">
+                <div class="col-12 py-2 col-md-7">
+                  <div class="px-lg-5">
+                    <img src="/images/rg_office_otd_2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" loading="lazy" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">You will be amazed at how helpful this toolkit is!</h1>
+                  <p class="lead">Join and streamline your process and improve your projects.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#signup" class="btn btn-primary btn-lg px-4 me-md-2" target="_blank">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- section start -->
+        <!-- ================ -->
+        <section id="section-2" class="section light-gray-bg">
+          <div class="container mt-n15">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="title">Love our setup? Check these <span class="text-default">Amazon</span> products 🚀</h2>
+                <div class="separator"></div>
+                <p>
+                  Plus, we get a little scratch, we hope you love them!
+                </p>
+                <div class="space-bottom"></div>
+                <div class="categories d-flex justify-content-center">
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="mic" href="https://amzn.to/3tBrVhA" >
+                    <div class="icon mic"></div><small class="icon-label">Podcast Mic</small></a>
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="desk" href="https://amzn.to/48DLRz4" >
+                    <div class="icon desk"></div><small class="icon-label">Standing Desk</small></a>
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="console" href="https://amzn.to/48AilKP" >
+                    <div class="icon console"></div><small class="icon-label">Handheld Console</small></a>
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="luna" href="https://amzn.to/3NPeL7z" >
+                    <div class="icon luna"></div><small class="icon-label">Luna Display</small></a>
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="display" href="https://amzn.to/47ew6hf" >
+                    <div class="icon display"></div><small class="icon-label">Secondary Display</small></a>
+                  <a target="_blank" class="icon-group" data-bs-placement="bottom" title="roost" href="https://amzn.to/48k7FQI" >
+                    <div class="icon roost"></div><small class="icon-label">Laptop Stand</small></a>
+                </div>
+                <div class="separator my-5"></div>
+                <p>Want some more shopping ideas? Check out the <a target="_blank" href="https://packkitlist.com/shopping.html">Packkit List</a>shopping page!
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section end -->
+
+        <div id="signup" style="background: url(/images/photography/hk_43817778_621301638265431_6174468599253341892_n.jpeg) no-repeat 100% 0% fixed" class="section">
+          <div class="container col-xxl-8 offset-xxl-2 py-5">
+            <div class="row align-items-center my-5 pt-5">
+              <div class="col-lg-6 offset-lg-3 my-5 pt-5">
+                <div class="text-center bg-light border rounded-3 p-5">
+                  <h1>Maximize your potential</h1>
+                  <!-- <form class="my-5" id="signupForm" action="http://localhost:3000/whitelist/d7336f14-522a-4dcf-9ae7-203e317a5f04" method="post"> -->
+                  <form class="my-5" id="signupForm" action="https://clickstudio.email/whitelist/32954296-786b-4fe5-94b1-cd9cae10b9fc" method="post">
+                    <h3>Sign Up Now</h3>
+                    <div class="form-floating">
+                      <input type="text" name="customer[name]" class="form-control" id="floatingInput" placeholder="Full Name">
+                      <label for="floatingInput">Name</label>
+                    </div>
+                    
+                    <div class="form-floating">
+                      <input type="email" name="customer[email]" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <div class="checkbox my-3">
+                      <label>
+                        <input name="customer[consented_at]" type="checkbox" value="remember-me" /> <small>By signing up, I agree to this website's privacy policy and terms of service. I also consent to receive marketing emails.</small>
+                      </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+                    <small>Powered by: <a href="https://clickstudio.email">clickstudio.email</a></small>
+                  </form>
+                  <div id="welcome"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container d-none"> 
+          <div id="goods"></div>
+          <div class="row my-5 py-5">
+            <div class="col-12 text-center my-5 py-5">
+              <small>Thank you for signing up, we hope this helps!</small>
+              <small>To see other offerings please checkout: <a href="https://raddstudio.com/get-started.html" target="_blank">Get Started</a> with Radd Studio Inc.</small>
+              <div class="px-5">
+                <img src="/images/329584141_1459576978114276_7798631343438351300_n.png" class="img-fluid rounded-3 mb-4" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer bg-dark">
+        <div class="container">
+          <nav class="w-100 text-end mr-3 navbar navbar-expand navbar-light fixed-bottom">
+            <p class="w-100 text-black">
+              <a href="https://raddrick.github.io/" target="raddrick" class="bg-light p-1 rounded">@raddrick</a> / <a href="https://raddstudio.com" class="bg-light p-1 rounded">RaddStudio.com</a>
+              <br> <span class="bg-light p-1 rounded">©'007-2024</span>
+            </p>
+          </nav>
+        </div>
+      </footer>
+    </div>
+        
+    <div id="guide-section" class="row my-5 d-none">
+      <div class="col-12">
+        <h2></h2>
+
+        <div class="row my-5 justify-content-center cards"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none" id="guide-card">
+      <div class="card my-2">
+        <img class="card-img-top" style="overflow:hidden;width:100%;height:180px;" />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary" target="_blank" rel="nofollow">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", () => {
+        //eraseCookie('ctoguide-clickstudio');
+
+        const form = document.getElementById("signupForm");
+        const goods = document.getElementById("goods");
+        const welcome = document.getElementById("welcome");
+
+        function handleSubmit(event) {
+          event.preventDefault();
+          console.log(event);
+
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", event.currentTarget.action); 
+          xhr.onload = function(event){ 
+              let customer = JSON.parse(event.target.response);
+              if (customer){
+                openGuide();
+                setCookie('ctoguide-clickstudio','confirmed',365);
+              }
+              
+          }; 
+          // or onerror, onabort
+          let formData = new FormData(document.getElementById("signupForm")); 
+          xhr.send(formData);
+
+          return false;
+        }
+
+        form.addEventListener("submit", handleSubmit);
+
+        if (getCookie('ctoguide-clickstudio') === 'confirmed') openGuide();
+
+        function prepareGoods() {
+          const goods = document.getElementById('goods');
+          const section = document.getElementById('guide-section');
+          const card = document.getElementById('guide-card');
+          const keys = ["architecture","career-growth","development","finance","guide","handbooks","hiring","more","people","product","project-management","reverse-interview","skills","startups","technologies"]; //guide.keys;
+          
+          for (i=0; i<keys.length; i++){
+            let newSection = section.cloneNode();
+            newSection.innerHTML = section.innerHTML;
+            let sectionTitle = newSection.getElementsByTagName('h2')[0];
+
+            sectionTitle.innerHTML = keys[i];
+            let cards = newSection.getElementsByClassName('cards')[0];
+
+            for (j=0; j<keys[i].length; j++){
+              const g = guide[keys[i]][j];
+              let newCard = card.cloneNode();
+              newCard.innerHTML = card.innerHTML;
+              let image = newCard.getElementsByTagName('img')[0];
+              let title = newCard.getElementsByTagName('h5')[0];
+              let body = newCard.getElementsByTagName('p')[0];
+              let link = newCard.getElementsByTagName('a')[0];
+              if (g){
+                image.src = `/images/cto-guide/${g[0]}`;
+                title.innerHTML = g[2];
+                link.href = g[1];
+  
+                newCard.classList.remove('d-none');
+                cards.append(newCard);
+              }
+            }
+            newSection.classList.remove('d-none');
+            goods.append(newSection);
+          }
+          goods.parentElement.classList.remove('d-none');
+        };
+
+        function openGuide() {
+          goods.classList.remove('d-none'); 
+          form.remove();
+          welcome.innerHTML = "<small>Welcome Back!</small>";
+
+          prepareGoods();
+        }
+
+      });
+
+      function setCookie(name,value,days) {
+          let expires = "";
+          if (days) {
+              let date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              expires = "; Expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "")  + expires + "; Path=/; SameSite=None;";
+      }
+      function getCookie(name) {
+          let nameEQ = name + "=";
+          let ca = document.cookie.split(';');
+          for(let i=0;i < ca.length;i++) {
+              let c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+      function eraseCookie(name) {   
+          document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT; SameSite=None;';
+      }
+    </script>
+
+    <script>
+    // personal message and ascii art for console
+    const message = "Welcome to:\n      ,. -  .,                          ,.,         ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,              ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,\n   ,&#x27; ,. -  .,  &#x60;&#x27; &#xB7;,                 ;&#xB4;   &#x27;&#xB7;.,      \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.          \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.\n   &#x27;; &#x27;&#xB7;~;:::::&#x27;&#x60;,   &#x27;;\\            .&#xB4;  .-,  &#x27;;\\     &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,      &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,\n    ;   ,&#x27;:\\::;:&#xB4;  .&#xB7;&#xB4;::\\&#x27;         /   /:\\:&#x27;;  ;&#x27;\\&#x27;    ;   ;&#x27;::\\;::::&#x27;;   ;\\     ;   ;&#x27;::\\;::::&#x27;;   ;\\\n    ;  &#xB7;&#x27;-&#xB7;&#x27;&#xB4;,.-&#xB7;&#x27;&#xB4;:::::&#x27;;       ,&#x27;  ,&#x27;::&#x27;\\&#x27;;  ;:&#x27;;    ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;  ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;\n  ;&#xB4;    &#x27;:,&#xB4;:::::::::::&#xB7;&#xB4;&#x27;   ,.-&#xB7;&#x27;  &#x27;&#xB7;~^*&#x27;&#xB4;&#xA8;,  &#x27;;:;   ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;  ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;\n   &#x27;;  ,    &#x60;&#xB7;:;:-&#xB7;&#x27;&#xB4;        &#x27;:,  ,&#xB7;:&#xB2;*&#xB4;&#xA8;&#xAF;&#x27;&#x60;;  ;::&#x27;;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;\n   ; ,&#x27;:\\&#x27;&#x60;:&#xB7;.,  &#x60; &#xB7;.,       ,&#x27;  / \\::::::::&#x27;;  ;::&#x27;; &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;  &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;\n   \\&#xB7;-;::\\:::::&#x27;&#x60;:&#xB7;-.,&#x27;;    ,&#x27; ,&#x27;::::\\&#xB7;&#xB2;*&#x27;&#xB4;&#xA8;&#xAF;&#x27;:,&#x27;\\:;   \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;       \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;\n    \\::\\:;&#x27;&#x60; &#xB7;:;:::::\\::\\&#x27;  \\&#x60;&#xA8;\\:::/          \\::\\&#x27;     \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;          \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;\n     &#x27;&#xB7;-&#xB7;&#x27;      &#x60;&#x27; &#xB7; -&#x27;::&#x27;  &#x27;\\::\\;&#x27;            &#x27;\\;&#x27;        &#x60;\\;::-&#xB7;&#xB4;          ____ __ &#x60;\\;::-&#xB7;&#xB4;   __ _\n                              &#x60;&#xA8;&#x27;                                           / __// /_ __ __ ___/ /(_)___\n                                                                           _\\ \\ / __// // // _  // // _ \\\n                                                                          /___/ \\__/ \\_,_/ \\_,_//_/ \\___/\n\nDesign, Develop, and Dream; Rick Graham, c.1983\n\nFollow me on twitter!\n\n  @radd_rick\n  @raddstudio\n\nSee an issue here?? Dont laugh...let me know! rick at raddstudio dot com";
+    // I dont want to store the message and raw text, so it is html encoded.
+    // we can use a span to decode it, there is no method to do this in javascript
+    // directly.
+    const node = document.createElement('span');
+    node.innerHTML = message;
+    console.log(node.innerHTML);
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17496104-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-17496104-1');
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6346a5c037898912e96e38e2/1gf5veuro';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <!-- Hotjar Tracking Code for https://raddstudio.com -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3714410,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  </body>
+</html>

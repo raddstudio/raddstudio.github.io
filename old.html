@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="image" property="og:image" content="https://raddstudio.com/images/award_bg_cesa19.jpg" />
+    <meta
+        name="description"
+        property="og:description"
+        content="Design, Develop, and Dream. We are a boutique studio for bespoke web and software goods and services."
+      />
+    <meta name="title" property="og:title" content="Radd Studio inc. // web .:. software .:. ideas" />
+    <meta name="url" property="og:url" content="https://raddstudio.com/mail/newsletter/23-12" />
+    <meta name="site_name" property="og:site_name" content="Radd Studio Inc." />
+    <meta property="type" content="website" />
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon-1024x1024.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin></script>
+    <script>var Alert = ReactBootstrap.Alert;</script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Radd Studio inc. // web .:. software .:. ideas</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container-fluid" id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <div class="container-fluid" style="background: url(/images/photography/hk_43817778_621301638265431_6174468599253341892_n.jpeg) no-repeat 100% 0% fixed; background-size: 100% 100%; min-height:1024px;">
+      <div class="row">
+        <div id="signup" class="section col-12">
+          <div class="container col-xxl-8 offset-xxl-2 py-5">
+            <div class="row align-items-center my-5 py-5">
+              <div class="col-lg-6 offset-lg-3 my-5 py-5">
+                <div class="text-center bg-light border rounded-3 p-3 p-md-5 ms-5 ms-md-0">
+                  <h1>Join our Network</h1>
+                  <form class="my-5" id="signupForm" action="https://clickstudio.email/whitelist/a7622c3f-549b-46be-8ff9-921131ea4897" method="post">
+                    <h3>Opt-in to recieve our Newsletter</h3>
+                    <div class="form-floating">
+                      <input type="text" name="customer[name]" class="form-control" id="floatingInput" placeholder="Full Name">
+                      <label for="floatingInput">Name</label>
+                    </div>
+                    
+                    <div class="form-floating">
+                      <input type="email" name="customer[email]" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <div class="checkbox my-3">
+                      <label>
+                        <input name="customer[consented_at]" type="checkbox" value="remember-me" /> <small>By signing up, I agree to this website's privacy policy and terms of service. I also consent to receive marketing emails.</small>
+                      </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+                    <small>Powered by: <a href="https://clickstudio.email">clickstudio.email</a></small>
+                  </form>
+                  <div id="welcome"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        //eraseCookie('ctoguide-clickstudio');
+
+        const form = document.getElementById("signupForm");
+        const welcome = document.getElementById("welcome");
+
+        function handleSubmit(event) {
+          event.preventDefault();
+          console.log(event);
+
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", event.currentTarget.action); 
+          xhr.onload = function(event){ 
+              let customer = JSON.parse(event.target.response);
+              if (customer){
+                openGuide();
+                setCookie('ctoguide-clickstudio','confirmed',365);
+              }
+              
+          }; 
+          // or onerror, onabort
+          let formData = new FormData(document.getElementById("signupForm")); 
+          xhr.send(formData);
+
+          return false;
+        }
+
+        form.addEventListener("submit", handleSubmit);
+
+        if (getCookie('ctoguide-clickstudio') === 'confirmed') openGuide();
+
+        
+        function openGuide() {
+          form.remove();
+          welcome.innerHTML = "<small>Welcome Back!</small>";
+        }
+
+      });
+
+      function setCookie(name,value,days) {
+          let expires = "";
+          if (days) {
+              let date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              expires = "; Expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "")  + expires + "; Path=/; SameSite=None;";
+      }
+      function getCookie(name) {
+          let nameEQ = name + "=";
+          let ca = document.cookie.split(';');
+          for(let i=0;i < ca.length;i++) {
+              let c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+      function eraseCookie(name) {   
+          document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT; SameSite=None;';
+      }
+    </script>
+
+    <script>
+      // personal message and ascii art for console
+      var message = "Welcome to:\n      ,. -  .,                          ,.,         ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,              ;&#x27;*&#xA8;&#x27;&#x60;&#xB7;- ., ,\n   ,&#x27; ,. -  .,  &#x60;&#x27; &#xB7;,                 ;&#xB4;   &#x27;&#xB7;.,      \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.          \\&#x60;:&#xB7;-,. ,   &#x27;&#x60; &#xB7;.\n   &#x27;; &#x27;&#xB7;~;:::::&#x27;&#x60;,   &#x27;;\\            .&#xB4;  .-,  &#x27;;\\     &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,      &#x27;\\:/   ;\\:&#x27;&#x60;:&#xB7;,  &#x27;&#x60;&#xB7;,\n    ;   ,&#x27;:\\::;:&#xB4;  .&#xB7;&#xB4;::\\&#x27;         /   /:\\:&#x27;;  ;&#x27;\\&#x27;    ;   ;&#x27;::\\;::::&#x27;;   ;\\     ;   ;&#x27;::\\;::::&#x27;;   ;\\\n    ;  &#xB7;&#x27;-&#xB7;&#x27;&#xB4;,.-&#xB7;&#x27;&#xB4;:::::&#x27;;       ,&#x27;  ,&#x27;::&#x27;\\&#x27;;  ;:&#x27;;    ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;  ;  ,&#x27;:::;  &#x60;&#xB7;:;;  ,&#x27;:&#x27;\\&#x27;\n  ;&#xB4;    &#x27;:,&#xB4;:::::::::::&#xB7;&#xB4;&#x27;   ,.-&#xB7;&#x27;  &#x27;&#xB7;~^*&#x27;&#xB4;&#xA8;,  &#x27;;:;   ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;  ;   ;:::;    ,&#xB7;&#x27; ,&#xB7;&#x27;:::;\n   &#x27;;  ,    &#x60;&#xB7;:;:-&#xB7;&#x27;&#xB4;        &#x27;:,  ,&#xB7;:&#xB2;*&#xB4;&#xA8;&#xAF;&#x27;&#x60;;  ;::&#x27;;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;  ;  ;:::;&#x27;  ,.&#x27;&#xB4;,&#xB7;&#xB4;:::::;\n   ; ,&#x27;:\\&#x27;&#x60;:&#xB7;.,  &#x60; &#xB7;.,       ,&#x27;  / \\::::::::&#x27;;  ;::&#x27;; &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;  &#x27;:,&#xB7;:;::-&#xB7;&#xB4;,.&#xB7;&#xB4;\\:::::;&#xB4;&#x27;\n   \\&#xB7;-;::\\:::::&#x27;&#x60;:&#xB7;-.,&#x27;;    ,&#x27; ,&#x27;::::\\&#xB7;&#xB2;*&#x27;&#xB4;&#xA8;&#xAF;&#x27;:,&#x27;\\:;   \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;       \\::;. -&#xB7;&#xB4;:::::;\\;&#xB7;&#xB4;\n    \\::\\:;&#x27;&#x60; &#xB7;:;:::::\\::\\&#x27;  \\&#x60;&#xA8;\\:::/          \\::\\&#x27;     \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;          \\;&#x27;\\::::::::;&#xB7;&#xB4;&#x27;\n     &#x27;&#xB7;-&#xB7;&#x27;      &#x60;&#x27; &#xB7; -&#x27;::&#x27;  &#x27;\\::\\;&#x27;            &#x27;\\;&#x27;        &#x60;\\;::-&#xB7;&#xB4;          ____ __ &#x60;\\;::-&#xB7;&#xB4;   __ _\n                              &#x60;&#xA8;&#x27;                                           / __// /_ __ __ ___/ /(_)___\n                                                                           _\\ \\ / __// // // _  // // _ \\\n                                                                          /___/ \\__/ \\_,_/ \\_,_//_/ \\___/\n\nDesign, Develop, and Dream; Rick Graham, c.1983\n\nFollow me on twitter!\n\n  @radd_rick\n  @raddstudio\n\nSee an issue here?? Dont laugh...let me know! rick at raddstudio dot com";
+      // I dont want to store the message and raw text, so it is html encoded.
+      // we can use a span to decode it, there is no method to do this in javascript
+      // directly.
+      var node = document.createElement('span');
+      node.innerHTML = message;
+      console.log(node.innerHTML);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17496104-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-17496104-1');
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/6346a5c037898912e96e38e2/1gf5veuro';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Hotjar Tracking Code for https://raddstudio.com -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3714410,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </body>
+</html>
