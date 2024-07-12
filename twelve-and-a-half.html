@@ -105,7 +105,7 @@
           xhr.open("POST", event.currentTarget.action); 
           xhr.onload = function(event){ 
               let customer = JSON.parse(event.target.response);
-              if (customer.id){
+              if (customer){
                 openGuide();
                 setCookie('ctoguide-clickstudio','confirmed',365);
               }
