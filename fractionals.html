@@ -331,7 +331,7 @@
           <div class="container col-xxl-8 offset-xxl-2 py-5">
             <div class="row align-items-center my-5 py-5">
               <div class="col-lg-6 offset-lg-3 my-5 py-5">
-                <div class="text-center bg-light border rounded-3 p-3 p-md-5 ms-5 ms-md-0">
+                <div class="text-center bg-light border rounded-3 p-3 p-md-5">
                   <h1>Join our Network</h1>
                   <form class="my-5" id="signupForm" action="https://clickstudio.email/whitelist/a7622c3f-549b-46be-8ff9-921131ea4897" method="post">
                     <h3>Opt-in to recieve our Newsletter</h3>
@@ -377,7 +377,7 @@
           xhr.open("POST", event.currentTarget.action); 
           xhr.onload = function(event){ 
               let customer = JSON.parse(event.target.response);
-              if (customer.id){
+              if (customer){
                 openGuide();
                 setCookie('ctoguide-clickstudio','confirmed',365);
               }
