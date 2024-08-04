@@ -191,17 +191,17 @@
             </div>
 
             <p>We are here to answer any questions you may have and provide the support you need to succeed. Reach out to us anytime, and let's start your journey towards business excellence together.</p>
-
-            <p>
-              <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-              <stripe-pricing-table pricing-table-id="prctbl_1NaR2wEedkLAyhSFxnSvN5Y8"
-              publishable-key="pk_live_51LuGxxEedkLAyhSF2ywJrhamHhb1BECKgYPFNiDVrK0Ac9qkXyWi5sTJE10rmqB6mU3aL99hTJA8gPOfJ1mlUzuv007852qwCX">
-              </stripe-pricing-table>
-            </p>
           </div>
         </div>
       </div>
     </div>
+    
+    <p>
+      <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+      <stripe-pricing-table pricing-table-id="prctbl_1NaR2wEedkLAyhSFxnSvN5Y8"
+      publishable-key="pk_live_51LuGxxEedkLAyhSF2ywJrhamHhb1BECKgYPFNiDVrK0Ac9qkXyWi5sTJE10rmqB6mU3aL99hTJA8gPOfJ1mlUzuv007852qwCX">
+      </stripe-pricing-table>
+    </p>
 
     <div class="container-fluid" style="background: url(/images/photography/hk_43817778_621301638265431_6174468599253341892_n.jpeg) no-repeat 100% 0% fixed; background-size: 100% 100%; min-height:1024px;">
       <div class="row">
@@ -246,10 +246,22 @@
         </div>
       </div>
     </div>
-
+    
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcw4hwqAAAAAAPd4TGiPrbrlS0qWRgzPCzg2GSn"></script>
     <script type="text/javascript">
 
       document.addEventListener("DOMContentLoaded", () => {
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lcw4hwqAAAAAAPd4TGiPrbrlS0qWRgzPCzg2GSn', {action: 'https://app.clickstudio.email/recaptcha'}).then(function(token) {
+            // Add the token to your form and submit it
+            var form = document.getElementById('signupForm');
+            var recaptchaResponse = document.createElement('input');
+            recaptchaResponse.setAttribute('type', 'hidden');
+            recaptchaResponse.setAttribute('name', 'g-recaptcha-response');
+            recaptchaResponse.setAttribute('value', token);
+            form.appendChild(recaptchaResponse);
+          });
+        });
 
         const form = document.getElementById("signupForm");
         const welcome = document.getElementById("welcome");
