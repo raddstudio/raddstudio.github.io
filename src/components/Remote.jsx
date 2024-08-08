@@ -12,7 +12,7 @@ import Page from './Page';
 
 const Remote = () => {
   const images = [
-    { image:'hk_43817778_621301638265431_6174468599253341892_n.jpeg',  city: 'Victoria Peak', country: 'Hong Kong', date: '', size: '250%'},
+    { image:'hk_43817778_621301638265431_6174468599253341892_n.jpg',  city: 'Victoria Peak', country: 'Hong Kong', date: '', size: '250%'},
     { image:'vn_14488074_555400348002321_5049435785384689664_n.jpeg',  city: 'Ha Long Bay',    country: 'Vietnam',   date: '', size: '250%'},
     { image:'kl_15802145_1206140272803162_4826998174994399232_n.jpeg', city: 'Kuala Lumpur', country: 'Malaysia', date: '', size: '100%'},
     { image:'kp_50602410_145629479779363_4463461943149809527_n.jpeg',  city: 'Koh Phangan', country: 'Thailand', date: '', size: '100%'},
