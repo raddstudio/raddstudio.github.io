@@ -17,7 +17,7 @@ const Promotions = () => {
     { image:'',  name: 'Founder Advisor Agreement [FAST]', url: '/agreements/fast.pdf', size: '100%'},
     // { image:'',  name: 'Watch Pitch Demo', url: '/pitch.html', size: '200%'},
     { image:'',  name: 'CTO Guide', url: '/cto-guide.html', size: '150%'},
-    // { image:'photography/hk_43817778_621301638265431_6174468599253341892_n.jpeg',  name: 'Careers', url: '/careers.html', size: '250%'},
+    // { image:'photography/hk_43817778_621301638265431_6174468599253341892_n.jpg',  name: 'Careers', url: '/careers.html', size: '250%'},
     // { image:'photography/hk_43985423_1083860391781324_457564329516359483_n.jpeg',  name: 'Interns', url: '/interns.html', size: '100%'},
     // { image:'photography/hk_44734732_2544176648956518_7536033727510464667_n.jpeg',  name: 'Web', url: '/web.html', size: '100%'},
     // { image:'photography/hk_46748544_432284710641724_3422203142141264470_n.jpeg',  name: 'Software', url: '/software.html', size: '100%'},

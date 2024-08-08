@@ -11,7 +11,7 @@ const Travel = () => {
     { image:'ch_28152337_222618591621438_7575052129400782848_n.jpeg',  city: 'Winterthur', country: 'Switzerland', date: '', size: '100%'},
     { image:'cr_67283822_362094608052459_6668998306194036371_n.jpeg',  city: 'Split',    country: 'Croatia', date: '', size: '100%'},
     { image:'gr_202538996_879092642821508_668894196307310178_n.jpeg',  city: 'Thessaloniki', country: 'Greece', date: '', size: '250%'},
-    { image:'hk_43817778_621301638265431_6174468599253341892_n.jpeg',  city: 'Victoria Peak', country: 'Hong Kong', date: '', size: '250%'},
+    { image:'hk_43817778_621301638265431_6174468599253341892_n.jpg',  city: 'Victoria Peak', country: 'Hong Kong', date: '', size: '250%'},
     { image:'ibiza_13381085_1619457415032756_1567779086_n.jpeg',       city: 'Ibiza',     country: 'Spain',     date: '', size: '100%'},
     { image:'kl_15802145_1206140272803162_4826998174994399232_n.jpeg', city: 'Kuala Lumpur', country: 'Malaysia', date: '', size: '100%'},
     { image:'kp_50602410_145629479779363_4463461943149809527_n.jpeg',  city: 'Koh Phangan', country: 'Thailand', date: '', size: '100%'},
