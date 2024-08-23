@@ -1,0 +1,66 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=34t1c0kllll2R26c5bJuAuXSvUI */
+
+.purple-0 { 
+	color: #4B2D73; 
+}
+.purple-1 { 
+	color: #0B0A0B; 
+}
+.purple-2 { 
+	color: #33293F; 
+}
+.purple-3 { 
+	color: #5415A7; 
+}
+.purple-4 { 
+	color: #6A05EF; 
+}
+
+.green-0 { 
+	color: #2D8632; 
+}
+.green-1 { 
+	color: #0C0D0C; 
+}
+.green-2 { 
+	color: #2E4930; 
+}
+.green-3 { 
+	color: #09C215; 
+}
+.green-4 { 
+	color: #00F410; 
+}
+
+.orange-0 { 
+	color: #AA6B39; 
+}
+.orange-1 { 
+	color: #11100F; 
+}
+.orange-2 { 
+	color: #5D4A3A; 
+}
+.orange-3 { 
+	color: #F7740B; 
+}
+.orange-4 { 
+	color: #FF7100; 
+}
+
+.btn-default { 
+	background-color: #50b948 !important;
+}
+.btn-primary { 
+	background-color: #f6931d !important;
+}
+.btn-secondary { 
+	background-color: #532047 !important;
+}
+
+
+.grey { 
+	color: #6c757d;
+}
